@@ -15,13 +15,13 @@ import cleanCSS from "gulp-clean-css"
 const sass = gulpSass(coreSass)
 
 export const browserSyncFunc = () => {
-    browserSync({
+    browserSync ({
         server: {
             baseDir: "docs"
         },
         open: true,
         browser: "chrome"
-        // port: 8080
+        //port: 8080
     })
 }
 
@@ -31,7 +31,7 @@ export const html = () => {
         "src/pug/*.pug"
     ])
     .pipe(pug({
-        // pretty : true
+        //pretty: true
     }))
     .pipe(gulp.dest("docs"))
     .pipe(browserSync.reload({
@@ -40,17 +40,17 @@ export const html = () => {
 }
 
 export const css = () => {
-    return gulp 
+    return gulp
     .src ([
         "src/sass/*.css",
         "src/sass/*.sass"
     ])
     .pipe(sass({
-        outputStyle: "compressed" // expanded, compact
+        outputStyle: "compressed" //expanded, compact
     })
     .on("error", sass.logError))
-    .pipe(autoprefixer(["last 15 versions"],{
-        cascade: true 
+    .pipe(autoprefixer(["last 15 versions"], {
+        cascade: true
     }))
     .pipe(gcmq("style.css"))
     .pipe(concat("style.css"))
@@ -64,12 +64,12 @@ export const css = () => {
 }
 
 export const js = () => {
-    return gulp
-    .src ([
+    return gulp 
+    .src([
         "src/js/**/*.js"
     ])
     .pipe(uglify.default())
-    .pipe(concat("script.js"))
+    .pipe(concat("scripts.js"))
     .pipe(gulp.dest("docs/js"))
     .pipe(browserSync.reload({
         stream: true
@@ -77,7 +77,7 @@ export const js = () => {
 }
 
 export const files = () => {
-    return gulp
+    return gulp 
     .src([
         "src/*.*"
     ], {dot: true})
@@ -88,18 +88,18 @@ export const files = () => {
 }
 
 export const fonts = () => {
-    return gulp
+    return gulp 
     .src([
         "src/fonts/**/*.*"
     ])
-    .pipe(gulp.dest("docs/fonts"))    
+    .pipe(gulp.dest("docs/fonts"))
     .pipe(browserSync.reload({
         stream: true
     }))
 }
 
 export const images = () => {
-    return gulp
+    return gulp 
     .src([
         "src/img/**/*"
     ])
@@ -112,19 +112,19 @@ export const images = () => {
 
 export const clear = () => {
     return cache.clearAll()
-}
+} 
 
 export const delDocs = () => {
     return del("docs")
 }
 
 export const watch = () => {
-    gulp.watch( "src/sass/**/*.sass", gulp.parallel(css))
-    gulp.watch( "src/js/**/*.js", gulp.parallel(js))
-    gulp.watch( "src/pug/**/*.pug", gulp.parallel(html))
-    gulp.watch( "src/*.*", gulp.parallel(files))
-    gulp.watch( "src/fonts/**/*.*", gulp.parallel(fonts))
-    gulp.watch( "src/img/**/*.*", gulp.parallel(images))
+    gulp.watch("src/sass/**/*.sass", gulp.parallel(css))
+    gulp.watch("src/js/**/*.js", gulp.parallel(js))
+    gulp.watch("src/pug/**/*.pug", gulp.parallel(html))
+    gulp.watch("src/*.*", gulp.parallel(files))
+    gulp.watch("src/fonts/**/*.*", gulp.parallel(fonts))
+    gulp.watch("src/img/**/*.*", gulp.parallel(images))
 }
 
 export default gulp.series(
