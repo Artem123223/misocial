@@ -15,7 +15,7 @@ import cleanCSS from "gulp-clean-css"
 const sass = gulpSass(coreSass)
 
 export const browserSyncFunc = () => {
-    browserSync ({
+    browserSync.init ({
         server: {
             baseDir: "docs"
         },

@@ -4,12 +4,50 @@ body
   font-family: 'Maven Pro'
   margin: 0
 
-header 
+header,
+footer > div:first-child
   +gradient('../img/glass.jpg')
+
+header,
+footer
+  padding: 50px
+
+.zozula
+  gap: 17px
 
 .light
   a
-    color: red
+    color: white
+  
 .dark
   a
-    color: green
+    color: black
+
+a 
+  text-decoration: none
+
+.golub 
+  list-style: none
+  display: flex
+  gap: 60px
+
+.logotext 
+  font-size: 30px
+  letter-spacing: 6px
+  font-weight: 700
+  +font-family('Maven Pro')
+
+.smalltextlogo 
+  font-size: 16px
+  line-height: 19px
+  color: #ffffff
+  font-weight: 500
+  font-family: "Maven Pro"
+
+.flex-between 
+  display: flex
+  justify-content: space-between
+
+.items-center 
+  display: flex
+  align-items: center

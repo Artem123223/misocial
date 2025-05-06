@@ -10,20 +10,20 @@
 mixin menu(mainMenu, colorTheme="light")
     .navigation.flex-between.items-center.gap(class=colorTheme)
         .logo 
-            a(href="index.html")
-                img(src="", alt="")
-                span MISOCIAL
-        nav.nav.flex-bettween.items-center
-            ul(class=colorTheme) 
+            a.items-center.zozula(href="index.html")
+                img(src="img/Symbol.svg", alt="логотип сайту")
+                span.logotext MISOCIAL
+        nav.nav.flex-between.items-center
+            ul.golub(class=colorTheme) 
                 for item in mainMenu 
-                    li 
+                    li.smalltextlogo 
                         a(href=item[1]) #{item[0]} 
             a(href="") get started  
 
 -
     let cardInfo = {
         satelite: {
-            img: "img/Symbol.svg",
+            img: "",
             href: "#",
             personal: "personal",
             currency: "$",
