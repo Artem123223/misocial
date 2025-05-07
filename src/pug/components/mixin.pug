@@ -18,7 +18,7 @@ mixin menu(mainMenu, colorTheme="light")
                 for item in mainMenu 
                     li.smalltextlogo 
                         a(href=item[1]) #{item[0]} 
-            a(href="") get started  
+            a.gav(href="") get started  
 
 -
     let cardInfo = {
@@ -80,13 +80,15 @@ mixin card(oneCard)
         figcaption 
             img(src=oneCard.img, alt=oneCard.alt)
             p.personal #{oneCard.personal}
-            p.price 
-                span.currency #{oneCard.currency}
+            p.price
+                sup
+                    span.currency #{oneCard.currency}
                 b #{oneCard.price} 
-                if isMonth 
-                    | /month 
-                else 
-                    | /year
+                sub
+                    if isMonth 
+                        | /month 
+                    else 
+                        | /year
             ul.description
                 for item in oneCard.description
                     li #{item}
