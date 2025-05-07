@@ -12,13 +12,16 @@ html(lang="en")
         include components/mixin
         header 
             +menu(mainMenu, 'light')
-            p SOCIAL MARKETING & ANALYTICS
-            h1 Pricing Table
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+            div
+                p.header-text.one SOCIAL MARKETING & ANALYTICS
+                h1 Pricing Table
+                p.bottom-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+                a(href="")        
         main 
-            p MIsocial
-            h2 Select a Plan
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
+            div
+                p.header-text.two MIsocial
+                h2 Select a Plan
+                p.bottom-text.three Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
             +card(cardInfo.satelite)
             +card(cardInfo.mars)
             +card(cardInfo.rocket)
@@ -26,7 +29,7 @@ html(lang="en")
             div 
                 p SOCAL MARKETING & ANALYTICS
                 h2 Take control of your data
-                +menu(mainMenu, 'dark')
+            +menu(mainMenu, 'dark')
             hr 
             div 
                 p © 2017 Mass Impressions & Tranmautritam. Make the right impression.
