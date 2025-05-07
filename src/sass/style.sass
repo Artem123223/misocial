@@ -8,9 +8,11 @@ body
   font-family: 'Maven Pro'
   margin: 0
 
-header,
-footer > div:first-child
+header
   +gradient('../img/glass.jpg')
+
+footer > div:first-child
+  +pucksuss('../img/Map.png')
 
 header
   text-align: center
@@ -22,20 +24,6 @@ main > div:first-child,
   display: flex
   flex-direction: column
   align-items: center
-
-.gav
-  display: inline-block
-  font-size: 12px
-  letter-spacing: 1px
-  text-transform: uppercase
-  color: #ffffff
-  font-weight: 700
-  font-family: "Maven Pro"
-  text-align: center
-  padding: 21px 33px
-  border-radius: 25px
-  background-color: rgba(110,69,226,0)
-  border: 1px solid #ffffff
 
 h1
   font-size: 86px
@@ -70,6 +58,23 @@ h1
 a 
   text-decoration: none
 
+.knopka
+  display: block
+  border-radius: 32px
+  box-shadow: 0 0 10.5px rgba(204,204,223,0.5)
+  background-color: #ffffff
+  width: 64px
+  height: 64px
+  transition: all 0.5s ease
+
+.knopka img
+  padding: 25px
+  border-radius: 32px
+  transition: all 0.5s ease
+
+.knopka:hover
+  box-shadow: 0 0 10.5px 10.5px rgba(204,204,223,0.9)
+
 .header-text
   font-size: 14px
   letter-spacing: 1px
@@ -77,6 +82,51 @@ a
   text-transform: uppercase
   font-weight: 700
   font-family: "Maven Pro"
+  position: relative
+
+.one:before
+  content: ""
+  position: absolute
+  display: block
+  top: 197px
+  left: -45px
+  width: 24px
+  height: 1px
+  border: none
+  border-top: 1px solid #fff
+
+.one:after
+  content: ""
+  position: absolute
+  display: block
+  top: 197px
+  right: -45px
+  width: 24px
+  height: 1px
+  border: none
+  border-top: 1px solid #fff
+
+.two:before
+  content: ""
+  position: absolute
+  display: block
+  top: 135px
+  left: -45px
+  width: 24px
+  height: 1px
+  border: none
+  border-top: 1px solid #6e45e2
+
+.two:after
+  content: ""
+  position: absolute
+  display: block
+  top: 135px
+  right: -45px
+  width: 24px
+  height: 1px
+  border: none
+  border-top: 1px solid #6e45e2
 
 .one
   padding-top: 182px
@@ -148,6 +198,10 @@ main
   border-radius: 30px
   background-color: #ffffff
   border: 1px solid #d7dbe8
+  transition: all 0,5s ease
+
+.maincards > figure:hover
+  box-shadow: 0 0 46px rgba(204,204,223,0.71)
 
 .description
   list-style: none
@@ -200,23 +254,6 @@ figure:last-child img
   padding-bottom: 24px
   color: #fff
 
-.gul
-  background-color: #6e45e2
-  border: none
-
-.other
-  font-size: 12px
-  letter-spacing: 1px
-  text-transform: uppercase
-  color: #c2c9db
-  font-weight: 700
-  font-family: "Maven Pro"
-  text-align: center
-  border-radius: 25px
-  box-shadow: 0 0 10.5px rgba(204,204,223,0.5)
-  background-color: #ffffff
-  border: 1px solid #d7dbe8
-
 .da
   display: flex
   gap: 10px
@@ -231,3 +268,51 @@ footer h2
   font-weight: 500
   font-family: "Maven Pro"
   text-align: center
+
+hr
+  border: none
+  border-top: 1px solid#bdbdc2
+  opacity: 0.200
+  margin: 30px 50px 0 50px
+
+footer div:last-child p
+  opacity: 0.502
+  font-size: 14px
+  line-height: 19px
+  color: #6a6a77
+  font-weight: 500
+  font-family: "Maven Pro"
+
+.samiynizsayta
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 26px 50px 26px 50px
+
+.abaudny
+  padding: 50px 50px 0 50px
+
+.samiynizsayta > div
+  display: flex
+  align-items: center
+  gap: 15px
+
+.samiynizsayta > div > a > img
+  opacity: 0.502
+  fill: #6a6a77
+
+.samiynizsayta > div > a:first-child
+  height: 16px
+  width: 8px
+
+.samiynizsayta > div > a:nth-child(2)
+  height: 12px
+  width: 14px
+
+.samiynizsayta > div > a:nth-child(3)
+  height: 14px
+  width: 21px
+
+.samiynizsayta > div > a:last-child
+  height: 15px
+  width: 15px
