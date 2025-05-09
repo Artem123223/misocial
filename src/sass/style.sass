@@ -50,13 +50,260 @@ h1
 .light
   a
     color: white
+
+  .cta-nav
+    +btn(false)
+
+  .golub > li:first-child > a:before
+    content: ""
+    position: absolute
+    transition: .5s ease
+    top: 25px
+    left: -2px
+    width: 50px
+    height: 2px
+    transform: scale(0)
+    border: none
+    border-top: 2px solid #fff
+
+  .golub > li:first-child > a:hover:before
+    content: ""
+    position: absolute
+    top: 25px
+    left: -2px
+    width: 50px
+    height: 2px
+    transform: scale(1)
+    border: none
+    border-top: 2px solid #fff
+
+  .golub > li:nth-child(2) > a:before
+    content: ""
+    position: absolute
+    transition: .5s ease
+    top: 25px
+    left: -2px
+    width: 115px
+    height: 2px
+    transform: scale(0)
+    border: none
+    border-top: 2px solid #fff
+
+  .golub > li:nth-child(2) > a:hover:before
+    content: ""
+    position: absolute
+    top: 25px
+    left: -2px
+    width: 115px
+    height: 2px
+    transform: scale(1)
+    border: none
+    border-top: 2px solid #fff
+
+  .golub > li:nth-child(3) > a:before
+    content: ""
+    position: absolute
+    transition: .5s ease
+    top: 25px
+    left: -3px
+    width: 70px
+    height: 2px
+    transform: scale(0)
+    border: none
+    border-top: 2px solid #fff
+
+  .golub > li:nth-child(3) > a:hover:before
+    content: ""
+    position: absolute
+    top: 25px
+    left: -3px
+    width: 70px
+    height: 2px
+    transform: scale(1)
+    border: none
+    border-top: 2px solid #fff
+
+  .golub > li:nth-child(4) > a:before
+    content: ""
+    position: absolute
+    transition: .5s ease
+    top: 25px
+    left: -5px
+    width: 65px
+    height: 2px
+    transform: scale(0)
+    border: none
+    border-top: 2px solid #fff
+
+  .golub > li:nth-child(4) > a:hover:before
+    content: ""
+    position: absolute
+    top: 25px
+    left: -5px
+    width: 65px
+    height: 2px
+    transform: scale(1)
+    border: none
+    border-top: 2px solid #fff
+
+  .golub > li:last-child > a:before
+    content: ""
+    position: absolute
+    transition: .5s ease
+    top: 25px
+    left: -5px
+    width: 60px
+    height: 2px
+    transform: scale(0)
+    border: none
+    border-top: 2px solid #fff
+
+  .golub > li:last-child > a:hover:before
+    content: ""
+    position: absolute
+    top: 25px
+    left: -5px
+    width: 60px
+    height: 2px
+    transform: scale(1)
+    border: none
+    border-top: 2px solid #fff
+
+.da > .cta-nav:first-child
+  +btn(true, true)
+
+.da > .cta-nav:last-child,
+.description ~ a
+  +btn(true)
   
 .dark
   a
     color: black
+  
+  .cta-nav
+    +btn(false, true)
+
+  .golub > li:first-child > a:before
+    content: ""
+    position: absolute
+    transition: .5s ease
+    top: 25px
+    left: -2px
+    width: 50px
+    height: 2px
+    transform: scale(0)
+    border: none
+    border-top: 2px solid #000
+
+  .golub > li:first-child > a:hover:before
+    content: ""
+    position: absolute
+    top: 25px
+    left: -2px
+    width: 50px
+    height: 2px
+    transform: scale(1)
+    border: none
+    border-top: 2px solid #000
+
+  .golub > li:nth-child(2) > a:before
+    content: ""
+    position: absolute
+    transition: .5s ease
+    top: 25px
+    left: -2px
+    width: 115px
+    height: 2px
+    transform: scale(0)
+    border: none
+    border-top: 2px solid #000
+
+  .golub > li:nth-child(2) > a:hover:before
+    content: ""
+    position: absolute
+    top: 25px
+    left: -2px
+    width: 115px
+    height: 2px
+    transform: scale(1)
+    border: none
+    border-top: 2px solid #000
+
+  .golub > li:nth-child(3) > a:before
+    content: ""
+    position: absolute
+    transition: .5s ease
+    top: 25px
+    left: -3px
+    width: 70px
+    height: 2px
+    transform: scale(0)
+    border: none
+    border-top: 2px solid #000
+
+  .golub > li:nth-child(3) > a:hover:before
+    content: ""
+    position: absolute
+    top: 25px
+    left: -3px
+    width: 70px
+    height: 2px
+    transform: scale(1)
+    border: none
+    border-top: 2px solid #000
+
+  .golub > li:nth-child(4) > a:before
+    content: ""
+    position: absolute
+    transition: .5s ease
+    top: 25px
+    left: -5px
+    width: 65px
+    height: 2px
+    transform: scale(0)
+    border: none
+    border-top: 2px solid #000
+
+  .golub > li:nth-child(4) > a:hover:before
+    content: ""
+    position: absolute
+    top: 25px
+    left: -5px
+    width: 65px
+    height: 2px
+    transform: scale(1)
+    border: none
+    border-top: 2px solid #000
+
+  .golub > li:last-child > a:before
+    content: ""
+    position: absolute
+    transition: .5s ease
+    top: 25px
+    left: -5px
+    width: 60px
+    height: 2px
+    transform: scale(0)
+    border: none
+    border-top: 2px solid #000
+
+  .golub > li:last-child > a:hover:before
+    content: ""
+    position: absolute
+    top: 25px
+    left: -5px
+    width: 60px
+    height: 2px
+    transform: scale(1)
+    border: none
+    border-top: 2px solid #000
 
 a 
   text-decoration: none
+
+.kaka
+  position: relative
+  transition: .5s ease
 
 .knopka
   display: block
@@ -194,7 +441,6 @@ main
 .maincards > figure
   width: 440px
   height: 648px
-  padding: 66px 0
   border-radius: 30px
   background-color: #ffffff
   border: 1px solid #d7dbe8
@@ -207,6 +453,7 @@ main
   list-style: none
   font-size: 16px
   line-height: 28px
+  padding-bottom: 55px
   color: #9fa4af
   font-weight: 400
   font-family: "Maven Pro"
@@ -298,6 +545,7 @@ footer div:last-child p
   gap: 15px
 
 .imgsvg
+  padding-top: 60px
   width: 120px
   height: 108px
 
@@ -320,3 +568,6 @@ footer div:last-child p
 .samiynizsayta > div > a:last-child
   height: 15px
   width: 15px
+
+.samiynizsayta > div > a > svg
+  fill: #6a6a77

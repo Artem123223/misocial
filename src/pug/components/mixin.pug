@@ -18,7 +18,7 @@ mixin menu(mainMenu, colorTheme="light")
                 for item in mainMenu 
                     li.smalltextlogo 
                         a.kaka(href=item[1]) #{item[0]} 
-            a.gav(href="") get started  
+            a.gav.cta-nav(href="") get started  
 
 -
     let cardInfo = {
@@ -76,7 +76,7 @@ mixin menu(mainMenu, colorTheme="light")
     }
 
 mixin card(oneCard)
-    figure 
+    figure
         figcaption 
             img.imgsvg(src=oneCard.img, alt=oneCard.alt)
             p.personal #{oneCard.personal}
@@ -92,4 +92,4 @@ mixin card(oneCard)
             ul.description
                 for item in oneCard.description
                     li #{item}
-            a(href=oneCard.hrefBtn) #{oneCard.btn}
+            a.cta-nav(href=oneCard.hrefBtn) #{oneCard.btn}
