@@ -78,13 +78,13 @@ mixin menu(mainMenu, colorTheme="light")
 mixin card(oneCard)
     figure 
         figcaption 
-            img(src=oneCard.img, alt=oneCard.alt)
+            img.imgsvg(src=oneCard.img, alt=oneCard.alt)
             p.personal #{oneCard.personal}
             p.price
                 sup
                     span.currency #{oneCard.currency}
                 b #{oneCard.price} 
-                sub
+                sub.time
                     if isMonth 
                         | /month 
                     else 
