@@ -4,6 +4,9 @@
   margin: 0
   padding: 0
 
+html
+  font-size: 1px
+
 body
   font-family: 'Maven Pro'
   margin: 0
@@ -16,7 +19,7 @@ footer > div:first-child
 
 header
   text-align: center
-  padding: 50px
+  padding: 50rem
 
 header > div:last-child,
 main > div:first-child,
@@ -26,26 +29,28 @@ main > div:first-child,
   align-items: center
 
 h1
-  font-size: 86px
-  letter-spacing: -3px
-  line-height: 72px
+  font-size: 86rem
+  letter-spacing: -3rem
+  line-height: 72rem
   color: #ffffff
   font-weight: 500
   font-family: "Maven Pro"
-  padding-bottom: 22px
+  padding-bottom: 22rem
 
 .bottom-text
-  width: 387px
-  font-size: 16px
-  line-height: 28px
-  padding-bottom: 180px
+  display: flex
+  flex-wrap: wrap
+  width: 387rem
+  font-size: 16rem
+  line-height: 28rem
+  padding-bottom: 180rem
   color: #ffffff
   font-weight: 400
   font-family: "Maven Pro"
   text-align: center
 
 .zozula
-  gap: 17px
+  gap: 17rem
 
 .light
   a
@@ -53,121 +58,127 @@ h1
 
   .cta-nav
     +btn(false)
+    transition: .5s ease
+
+  .cta-nav:hover
+    background-color: #fff
+    border: 1rem solid transparent
+    color: #ccc
 
   .golub > li:first-child > a:before
     content: ""
     position: absolute
     transition: .5s ease
-    top: 25px
-    left: -2px
-    width: 50px
-    height: 2px
+    top: 25rem
+    left: -2rem
+    width: 50rem
+    height: 2rem
     transform: scale(0)
     border: none
-    border-top: 2px solid #fff
+    border-top: 2rem solid #fff
 
   .golub > li:first-child > a:hover:before
     content: ""
     position: absolute
-    top: 25px
-    left: -2px
-    width: 50px
-    height: 2px
+    top: 25rem
+    left: -2rem
+    width: 50rem
+    height: 2rem
     transform: scale(1)
     border: none
-    border-top: 2px solid #fff
+    border-top: 2rem solid #fff
 
   .golub > li:nth-child(2) > a:before
     content: ""
     position: absolute
     transition: .5s ease
-    top: 25px
-    left: -2px
-    width: 115px
-    height: 2px
+    top: 25rem
+    left: -2rem
+    width: 115rem
+    height: 2rem
     transform: scale(0)
     border: none
-    border-top: 2px solid #fff
+    border-top: 2rem solid #fff
 
   .golub > li:nth-child(2) > a:hover:before
     content: ""
     position: absolute
-    top: 25px
-    left: -2px
-    width: 115px
-    height: 2px
+    top: 25rem
+    left: -2rem
+    width: 115rem
+    height: 2rem
     transform: scale(1)
     border: none
-    border-top: 2px solid #fff
+    border-top: 2rem solid #fff
 
   .golub > li:nth-child(3) > a:before
     content: ""
     position: absolute
     transition: .5s ease
-    top: 25px
-    left: -3px
-    width: 70px
-    height: 2px
+    top: 25rem
+    left: -3rem
+    width: 70rem
+    height: 2rem
     transform: scale(0)
     border: none
-    border-top: 2px solid #fff
+    border-top: 2rem solid #fff
 
   .golub > li:nth-child(3) > a:hover:before
     content: ""
     position: absolute
-    top: 25px
-    left: -3px
-    width: 70px
-    height: 2px
+    top: 25rem
+    left: -3rem
+    width: 70rem
+    height: 2rem
     transform: scale(1)
     border: none
-    border-top: 2px solid #fff
+    border-top: 2rem solid #fff
 
   .golub > li:nth-child(4) > a:before
     content: ""
     position: absolute
     transition: .5s ease
-    top: 25px
-    left: -5px
-    width: 65px
-    height: 2px
+    top: 25rem
+    left: -5rem
+    width: 65rem
+    height: 2rem
     transform: scale(0)
     border: none
-    border-top: 2px solid #fff
+    border-top: 2rem solid #fff
 
   .golub > li:nth-child(4) > a:hover:before
     content: ""
     position: absolute
-    top: 25px
-    left: -5px
-    width: 65px
-    height: 2px
+    top: 25rem
+    left: -5rem
+    width: 65rem
+    height: 2rem
     transform: scale(1)
     border: none
-    border-top: 2px solid #fff
+    border-top: 2rem solid #fff
 
   .golub > li:last-child > a:before
     content: ""
     position: absolute
     transition: .5s ease
-    top: 25px
-    left: -5px
-    width: 60px
-    height: 2px
+    top: 25rem
+    left: -5rem
+    width: 60rem
+    height: 2rem
     transform: scale(0)
     border: none
-    border-top: 2px solid #fff
+    border-top: 2rem solid #fff
 
   .golub > li:last-child > a:hover:before
     content: ""
     position: absolute
-    top: 25px
-    left: -5px
-    width: 60px
-    height: 2px
+    top: 25rem
+    left: -5rem
+    width: 60rem
+    height: 2rem
     transform: scale(1)
     border: none
-    border-top: 2px solid #fff
+    border-top: 2rem solid #fff
 
 .da > .cta-nav:first-child
   +btn(true, true)
@@ -187,116 +198,116 @@ h1
     content: ""
     position: absolute
     transition: .5s ease
-    top: 25px
-    left: -2px
-    width: 50px
-    height: 2px
+    top: 25rem
+    left: -2rem
+    width: 50rem
+    height: 2rem
     transform: scale(0)
     border: none
-    border-top: 2px solid #000
+    border-top: 2rem solid #000
 
   .golub > li:first-child > a:hover:before
     content: ""
     position: absolute
-    top: 25px
-    left: -2px
-    width: 50px
-    height: 2px
+    top: 25rem
+    left: -2rem
+    width: 50rem
+    height: 2rem
     transform: scale(1)
     border: none
-    border-top: 2px solid #000
+    border-top: 2rem solid #000
 
   .golub > li:nth-child(2) > a:before
     content: ""
     position: absolute
     transition: .5s ease
-    top: 25px
-    left: -2px
-    width: 115px
-    height: 2px
+    top: 25rem
+    left: -2rem
+    width: 115rem
+    height: 2rem
     transform: scale(0)
     border: none
-    border-top: 2px solid #000
+    border-top: 2rem solid #000
 
   .golub > li:nth-child(2) > a:hover:before
     content: ""
     position: absolute
-    top: 25px
-    left: -2px
-    width: 115px
-    height: 2px
+    top: 25rem
+    left: -2rem
+    width: 115rem
+    height: 2rem
     transform: scale(1)
     border: none
-    border-top: 2px solid #000
+    border-top: 2rem solid #000
 
   .golub > li:nth-child(3) > a:before
     content: ""
     position: absolute
     transition: .5s ease
-    top: 25px
-    left: -3px
-    width: 70px
-    height: 2px
+    top: 25rem
+    left: -3rem
+    width: 70rem
+    height: 2rem
     transform: scale(0)
     border: none
-    border-top: 2px solid #000
+    border-top: 2rem solid #000
 
   .golub > li:nth-child(3) > a:hover:before
     content: ""
     position: absolute
-    top: 25px
-    left: -3px
-    width: 70px
-    height: 2px
+    top: 25rem
+    left: -3rem
+    width: 70rem
+    height: 2rem
     transform: scale(1)
     border: none
-    border-top: 2px solid #000
+    border-top: 2rem solid #000
 
   .golub > li:nth-child(4) > a:before
     content: ""
     position: absolute
     transition: .5s ease
-    top: 25px
-    left: -5px
-    width: 65px
-    height: 2px
+    top: 25rem
+    left: -5rem
+    width: 65rem
+    height: 2rem
     transform: scale(0)
     border: none
-    border-top: 2px solid #000
+    border-top: 2rem solid #000
 
   .golub > li:nth-child(4) > a:hover:before
     content: ""
     position: absolute
-    top: 25px
-    left: -5px
-    width: 65px
-    height: 2px
+    top: 25rem
+    left: -5rem
+    width: 65rem
+    height: 2rem
     transform: scale(1)
     border: none
-    border-top: 2px solid #000
+    border-top: 2rem solid #000
 
   .golub > li:last-child > a:before
     content: ""
     position: absolute
     transition: .5s ease
-    top: 25px
-    left: -5px
-    width: 60px
-    height: 2px
+    top: 25rem
+    left: -5rem
+    width: 60rem
+    height: 2rem
     transform: scale(0)
     border: none
-    border-top: 2px solid #000
+    border-top: 2rem solid #000
 
   .golub > li:last-child > a:hover:before
     content: ""
     position: absolute
-    top: 25px
-    left: -5px
-    width: 60px
-    height: 2px
+    top: 25rem
+    left: -5rem
+    width: 60rem
+    height: 2rem
     transform: scale(1)
     border: none
-    border-top: 2px solid #000
+    border-top: 2rem solid #000
 
 a 
   text-decoration: none
@@ -307,25 +318,25 @@ a
 
 .knopka
   display: block
-  border-radius: 32px
-  box-shadow: 0 0 10.5px rgba(204,204,223,0.5)
+  border-radius: 32rem
+  box-shadow: 0 0 10.5rem rgba(204,204,223,0.5)
   background-color: #ffffff
-  width: 64px
-  height: 64px
+  width: 64rem
+  height: 64rem
   transition: all 0.5s ease
 
 .knopka img
-  padding: 25px
-  border-radius: 32px
+  padding: 25rem
+  border-radius: 32rem
   transition: all 0.5s ease
 
 .knopka:hover
-  box-shadow: 0 0 10.5px 10.5px rgba(204,204,223,0.9)
+  box-shadow: 0 0 10.5rem 10.5rem rgba(204,204,223,0.9)
 
 .header-text
-  font-size: 14px
-  letter-spacing: 1px
-  line-height: 32px
+  font-size: 14rem
+  letter-spacing: 1rem
+  line-height: 32rem
   text-transform: uppercase
   font-weight: 700
   font-family: "Maven Pro"
@@ -335,92 +346,95 @@ a
   content: ""
   position: absolute
   display: block
-  top: 197px
-  left: -45px
-  width: 24px
-  height: 1px
+  top: 197rem
+  left: -45rem
+  width: 24rem
+  height: 1rem
   border: none
-  border-top: 1px solid #fff
+  border-top: 1rem solid #fff
 
 .one:after
   content: ""
   position: absolute
   display: block
-  top: 197px
-  right: -45px
-  width: 24px
-  height: 1px
+  top: 197rem
+  right: -45rem
+  width: 24rem
+  height: 1rem
   border: none
-  border-top: 1px solid #fff
+  border-top: 1rem solid #fff
 
 .two:before
   content: ""
   position: absolute
   display: block
-  top: 135px
-  left: -45px
-  width: 24px
-  height: 1px
+  top: 135rem
+  left: -45rem
+  width: 24rem
+  height: 1rem
   border: none
-  border-top: 1px solid #6e45e2
+  border-top: 1rem solid #6e45e2
 
 .two:after
   content: ""
   position: absolute
   display: block
-  top: 135px
-  right: -45px
-  width: 24px
-  height: 1px
+  top: 135rem
+  right: -45rem
+  width: 24rem
+  height: 1rem
   border: none
-  border-top: 1px solid #6e45e2
+  border-top: 1rem solid #6e45e2
 
 .one
-  padding-top: 182px
-  padding-bottom: 40px
+  padding-top: 182rem
+  padding-bottom: 40rem
   color: #fff
 
 .two
-  padding-top: 120px
-  padding-bottom: 25px
+  padding-top: 120rem
+  padding-bottom: 25rem
   color: #9fa4af
 
 .three
-  width: 394px
-  padding-bottom: 100px
+  width: 394rem
+  padding-bottom: 100rem
   color: #9fa4af
 
 h2
-  font-size: 60px
-  letter-spacing: -2px
-  line-height: 72px
+  font-size: 60rem
+  letter-spacing: -2rem
+  line-height: 72rem
   color: #4f4f6f
   font-weight: 500
   font-family: "Maven Pro"
-  padding-bottom: 38px
+  padding-bottom: 38rem
 
 .golub 
   list-style: none
   display: flex
-  gap: 60px
-  padding-right: 60px
+  flex-wrap: wrap
+  align-items: center
+  gap: 60rem
+  padding-right: 60rem
 
 .logotext 
-  font-size: 30px
-  letter-spacing: 6px
+  font-size: 30rem
+  letter-spacing: 6rem
   font-weight: 700
   +font-family('Maven Pro')
 
 .smalltextlogo 
-  font-size: 16px
-  line-height: 19px
+  font-size: 16rem
+  line-height: 19rem
   color: #ffffff
   font-weight: 500
   font-family: "Maven Pro"
 
 .flex-between 
   display: flex
-  justify-content: space-between
+  justify-content: center
+  flex-wrap: wrap
 
 .items-center 
   display: flex
@@ -428,59 +442,60 @@ h2
 
 main 
   text-align: center
-  box-shadow: inset 0px 1px 0px #e8ebf1
-  box-shadow: inset 0px -1px 0px #e8ebf1
+  box-shadow: inset 0rem 1rem 0rem #e8ebf1
+  box-shadow: inset 0rem -1rem 0rem #e8ebf1
   background-color: #f9fafc
-  padding-bottom: 120px
+  padding-bottom: 120rem
 
 .maincards
   display: flex
-  gap: 50px
+  flex-wrap: wrap
+  gap: 50rem
   justify-content: center
 
 .maincards > figure
-  width: 440px
-  height: 648px
-  border-radius: 30px
+  width: 440rem
+  height: 648rem
+  border-radius: 30rem
   background-color: #ffffff
-  border: 1px solid #d7dbe8
+  border: 1rem solid #d7dbe8
   transition: all 0.5s ease
 
 .maincards > figure:hover
-  box-shadow: 0 0 46px rgba(204,204,223,0.71)
+  box-shadow: 0 0 46rem rgba(204,204,223,0.71)
 
 .description
   list-style: none
-  font-size: 16px
-  line-height: 28px
-  padding-bottom: 55px
+  font-size: 16rem
+  line-height: 28rem
+  padding-bottom: 55rem
   color: #9fa4af
   font-weight: 400
   font-family: "Maven Pro"
   text-align: center
 
 .personal
-  font-size: 14px
-  letter-spacing: 1px
-  line-height: 32px
+  font-size: 14rem
+  letter-spacing: 1rem
+  line-height: 32rem
   text-transform: uppercase
   color: #9fa4af
   font-weight: 700
   font-family: "Maven Pro"
 
 figure:first-child img
-  padding-bottom: 53px
+  padding-bottom: 53rem
 
 figure:nth-child(2) img
-  padding-bottom: 53px
+  padding-bottom: 53rem
 
 figure:last-child img
-  padding-bottom: 53px
+  padding-bottom: 53rem
 
 .price b
-  font-size: 60px
-  letter-spacing: -2px
-  line-height: 72px
+  font-size: 60rem
+  letter-spacing: -2rem
+  line-height: 72rem
   color: #4f4f6f
   font-weight: 500
   font-family: "Maven Pro"
@@ -488,29 +503,31 @@ figure:last-child img
 
 .price b ~ sub,
 .currency
-  font-size: 16px
-  letter-spacing: -1px
-  line-height: 51px
+  font-size: 16rem
+  letter-spacing: -1rem
+  line-height: 51rem
   color: #4f4f6f
   font-weight: 500
   font-family: "Maven Pro"
   text-align: center
 
 .fourth
-  padding-top: 178px
-  padding-bottom: 24px
+  padding-top: 178rem
+  padding-bottom: 24rem
   color: #fff
 
 .da
   display: flex
-  gap: 10px
-  padding-bottom: 186px
+  flex-wrap: wrap
+  justify-content: center
+  gap: 10rem
+  padding-bottom: 186rem
 
 footer h2
-  font-size: 60px
-  letter-spacing: -2px
-  line-height: 72px
-  padding-bottom: 18px
+  font-size: 60rem
+  letter-spacing: -2rem
+  line-height: 72rem
+  padding-bottom: 18rem
   color: #ffffff
   font-weight: 500
   font-family: "Maven Pro"
@@ -518,14 +535,14 @@ footer h2
 
 hr
   border: none
-  border-top: 1px solid#bdbdc2
+  border-top: 1rem solid#bdbdc2
   opacity: 0.200
-  margin: 30px 50px 0 50px
+  margin: 30rem 50rem 0 50rem
 
 footer div:last-child p
   opacity: 0.502
-  font-size: 14px
-  line-height: 19px
+  font-size: 14rem
+  line-height: 19rem
   color: #6a6a77
   font-weight: 500
   font-family: "Maven Pro"
@@ -534,40 +551,128 @@ footer div:last-child p
   display: flex
   align-items: center
   justify-content: space-between
-  padding: 26px 50px 26px 50px
+  padding: 26rem 50rem 26rem 50rem
 
 .abaudny
-  padding: 50px 50px 0 50px
+  padding: 50rem 50rem 0 50rem
 
 .samiynizsayta > div
   display: flex
   align-items: center
-  gap: 15px
+  gap: 15rem
 
 .imgsvg
-  padding-top: 60px
-  width: 120px
-  height: 108px
+  padding-top: 60rem
+  width: 120rem
+  height: 108rem
 
 .samiynizsayta > div > a > img
   opacity: 0.502
   fill: #6a6a77
 
-.samiynizsayta > div > a:first-child
-  height: 16px
-  width: 8px
+.samiynizsayta > div > a:first-child,
+.samiynizsayta > div > a:first-child > svg
+  height: 15rem
+  width: 8rem
 
 .samiynizsayta > div > a:nth-child(2)
-  height: 12px
-  width: 14px
+  height: 12rem
+  width: 14rem
 
 .samiynizsayta > div > a:nth-child(3)
-  height: 14px
-  width: 21px
+  height: 14rem
+  width: 21rem
 
 .samiynizsayta > div > a:last-child
-  height: 15px
-  width: 15px
+  height: 15rem
+  width: 15rem
+
+.knopka > img
+  width: 14rem
+  height: 16rem
 
 .samiynizsayta > div > a > svg
+  transition: .5s ease
   fill: #6a6a77
+
+.samiynizsayta > div > a > svg:hover
+  fill: #6e45e2
+
+.burger 
+  width: 50px
+  height: 100%
+  cursor: pointer
+
+.bord 
+  display: block
+  margin: 4px
+  width: 30px
+  height: 5px
+  border-radius: 2px
+  background-color: #fff
+  transition: all 1s ease
+
+.burger:hover > .b1 
+  transform: translateX(20px)
+
+.burger:hover > .b2 
+  transform: translateX(10px)
+
+
+.b1 
+  width: 20px
+
+.b2 
+  width: 30px
+
+.b3 
+  width: 40px
+  top: 10px
+
+.menu 
+  position: absolute
+  top: 0
+  left: -150%
+  z-index: 2
+  background-color: aqua
+  transition: all .5s ease
+
+.cancel 
+  position: absolute
+  top: -10px
+  right: 5px
+  cursor: pointer
+
+@media screen and (min-width: 500px) 
+  .burger 
+    display: none
+  
+  .top-line 
+    padding: 0 10px
+  
+  .menu 
+    position: static
+    display: flex
+    justify-content: space-between
+    gap: 60rem
+    background-color: transparent
+  
+  .cancel 
+    display: none
+
+@media screen and (min-width: 320px)
+  html
+    font-size: 0.7px
+
+  .golub
+    padding-right: 60rem
+
+@media screen and (min-width: 1130px)
+  html
+    font-size: 1px
+
+@media screen and (min-width: 851px)
+  .flex-between
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
