@@ -238,6 +238,17 @@ h1
 .da > .cta-nav:last-child,
 .description ~ a
   +btn(true)
+
+.dark-bgc
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.3)
+  backdrop-filter: blur(4px)
+  z-index: 1
   
 .dark
   a
@@ -277,11 +288,11 @@ h1
   .menu 
     position: absolute
     top: 0
-    left: -150%
-    width: 30vw
+    left: -100%
+    width: 20vw
     height: 100vh
     z-index: 2
-    background-color: aqua
+    background-color: transparent
     transition: all .5s ease
 
   .cancel 
@@ -602,6 +613,11 @@ footer div:last-child p
   .cancel 
     display: none
 
+  .flex-between
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+
 @media screen and (min-width: 320px)
   html
     font-size: 0.7px
@@ -624,13 +640,6 @@ footer div:last-child p
   .top-line 
     padding: 0 10px
   
-  .menu 
-    position: static
-    display: flex
-    justify-content: space-between
-    column-gap: 10px
-    background-color: pink
-  
   .menu li 
     padding: 15px 10px
   
@@ -640,9 +649,3 @@ footer div:last-child p
 @media screen and (min-width: 1130px)
   html
     font-size: 1px
-
-@media screen and (min-width: 768px)
-  .flex-between
-    display: flex
-    flex-wrap: nowrap
-    justify-content: space-between
