@@ -28,6 +28,12 @@ main > div:first-child,
   flex-direction: column
   align-items: center
 
+header > div:last-child
+  min-height: 70vh
+  display: flex
+  justify-content: flex-end
+  align-items: center
+
 h1
   font-size: 86rem
   letter-spacing: -3rem
@@ -55,6 +61,52 @@ h1
 .light
   a
     color: white
+
+  .burger 
+    width: 50px
+    height: 100%
+    cursor: pointer
+
+  .bord 
+    display: block
+    margin: 4px
+    width: 30px
+    height: 5px
+    border-radius: 2px
+    background-color: #fff
+    transition: all 1s ease
+
+  .burger:hover > .b1 
+    transform: translateX(20px)
+
+  .burger:hover > .b2 
+    transform: translateX(10px)
+
+  .b1 
+    width: 20px
+
+  .b2 
+    width: 30px
+
+  .b3 
+    width: 40px
+    top: 10px
+
+  .menu 
+    position: absolute
+    top: 0
+    left: -100%
+    width: 30vw
+    height: 100vh
+    z-index: 2
+    background-color: transparent
+    transition: all .5s ease
+
+  .cancel 
+    position: absolute
+    top: -10px
+    right: 5px
+    cursor: pointer
 
   .cta-nav
     +btn(false)
@@ -190,124 +242,59 @@ h1
 .dark
   a
     color: black
+
+  .burger 
+    width: 50px
+    height: 100%
+    cursor: pointer
+
+  .bord 
+    display: block
+    margin: 4px
+    width: 30px
+    height: 5px
+    border-radius: 2px
+    background-color: #6a6a77
+    transition: all 1s ease
+
+  .burger:hover > .b1 
+    transform: translateX(20px)
+
+  .burger:hover > .b2 
+    transform: translateX(10px)
+
+
+  .b1 
+    width: 20px
+
+  .b2 
+    width: 30px
+
+  .b3 
+    width: 40px
+    top: 10px
+
+  .menu 
+    position: absolute
+    top: 0
+    left: -150%
+    width: 30vw
+    height: 100vh
+    z-index: 2
+    background-color: aqua
+    transition: all .5s ease
+
+  .cancel 
+    position: absolute
+    top: -10px
+    right: 5px
+    cursor: pointer
   
   .cta-nav
     +btn(false, true)
 
-  .golub > li:first-child > a:before
-    content: ""
-    position: absolute
-    transition: .5s ease
-    top: 25rem
-    left: -2rem
-    width: 50rem
-    height: 2rem
-    transform: scale(0)
-    border: none
-    border-top: 2rem solid #000
-
-  .golub > li:first-child > a:hover:before
-    content: ""
-    position: absolute
-    top: 25rem
-    left: -2rem
-    width: 50rem
-    height: 2rem
-    transform: scale(1)
-    border: none
-    border-top: 2rem solid #000
-
-  .golub > li:nth-child(2) > a:before
-    content: ""
-    position: absolute
-    transition: .5s ease
-    top: 25rem
-    left: -2rem
-    width: 115rem
-    height: 2rem
-    transform: scale(0)
-    border: none
-    border-top: 2rem solid #000
-
-  .golub > li:nth-child(2) > a:hover:before
-    content: ""
-    position: absolute
-    top: 25rem
-    left: -2rem
-    width: 115rem
-    height: 2rem
-    transform: scale(1)
-    border: none
-    border-top: 2rem solid #000
-
-  .golub > li:nth-child(3) > a:before
-    content: ""
-    position: absolute
-    transition: .5s ease
-    top: 25rem
-    left: -3rem
-    width: 70rem
-    height: 2rem
-    transform: scale(0)
-    border: none
-    border-top: 2rem solid #000
-
-  .golub > li:nth-child(3) > a:hover:before
-    content: ""
-    position: absolute
-    top: 25rem
-    left: -3rem
-    width: 70rem
-    height: 2rem
-    transform: scale(1)
-    border: none
-    border-top: 2rem solid #000
-
-  .golub > li:nth-child(4) > a:before
-    content: ""
-    position: absolute
-    transition: .5s ease
-    top: 25rem
-    left: -5rem
-    width: 65rem
-    height: 2rem
-    transform: scale(0)
-    border: none
-    border-top: 2rem solid #000
-
-  .golub > li:nth-child(4) > a:hover:before
-    content: ""
-    position: absolute
-    top: 25rem
-    left: -5rem
-    width: 65rem
-    height: 2rem
-    transform: scale(1)
-    border: none
-    border-top: 2rem solid #000
-
-  .golub > li:last-child > a:before
-    content: ""
-    position: absolute
-    transition: .5s ease
-    top: 25rem
-    left: -5rem
-    width: 60rem
-    height: 2rem
-    transform: scale(0)
-    border: none
-    border-top: 2rem solid #000
-
-  .golub > li:last-child > a:hover:before
-    content: ""
-    position: absolute
-    top: 25rem
-    left: -5rem
-    width: 60rem
-    height: 2rem
-    transform: scale(1)
-    border: none
-    border-top: 2rem solid #000
+  .kaka:hover
+    color: #6e45e2
 
 a 
   text-decoration: none
@@ -346,8 +333,9 @@ a
   content: ""
   position: absolute
   display: block
-  top: 197rem
-  left: -45rem
+  top: 22%
+  left: -15%
+  transform: translate(-50%, -50%)
   width: 24rem
   height: 1rem
   border: none
@@ -357,8 +345,9 @@ a
   content: ""
   position: absolute
   display: block
-  top: 197rem
-  right: -45rem
+  top: 22%
+  right: -25%
+  transform: translate(-50%, -50%)
   width: 24rem
   height: 1rem
   border: none
@@ -368,8 +357,9 @@ a
   content: ""
   position: absolute
   display: block
-  top: 135rem
-  left: -45rem
+  top: 29%
+  left: -30%
+  transform: translate(-50%, -50%)
   width: 24rem
   height: 1rem
   border: none
@@ -379,20 +369,19 @@ a
   content: ""
   position: absolute
   display: block
-  top: 135rem
-  right: -45rem
+  top: 29%
+  right: -60%
+  transform: translate(-50%, -50%)
   width: 24rem
   height: 1rem
   border: none
   border-top: 1rem solid #6e45e2
 
 .one
-  padding-top: 182rem
   padding-bottom: 40rem
   color: #fff
 
 .two
-  padding-top: 120rem
   padding-bottom: 25rem
   color: #9fa4af
 
@@ -445,7 +434,7 @@ main
   box-shadow: inset 0rem 1rem 0rem #e8ebf1
   box-shadow: inset 0rem -1rem 0rem #e8ebf1
   background-color: #f9fafc
-  padding-bottom: 120rem
+  padding: 120rem 0
 
 .maincards
   display: flex
@@ -454,8 +443,7 @@ main
   justify-content: center
 
 .maincards > figure
-  width: 440rem
-  height: 648rem
+  padding: 59rem 72rem 66rem
   border-radius: 30rem
   background-color: #ffffff
   border: 1rem solid #d7dbe8
@@ -562,7 +550,6 @@ footer div:last-child p
   gap: 15rem
 
 .imgsvg
-  padding-top: 60rem
   width: 120rem
   height: 108rem
 
@@ -598,51 +585,6 @@ footer div:last-child p
 .samiynizsayta > div > a > svg:hover
   fill: #6e45e2
 
-.burger 
-  width: 50px
-  height: 100%
-  cursor: pointer
-
-.bord 
-  display: block
-  margin: 4px
-  width: 30px
-  height: 5px
-  border-radius: 2px
-  background-color: #fff
-  transition: all 1s ease
-
-.burger:hover > .b1 
-  transform: translateX(20px)
-
-.burger:hover > .b2 
-  transform: translateX(10px)
-
-
-.b1 
-  width: 20px
-
-.b2 
-  width: 30px
-
-.b3 
-  width: 40px
-  top: 10px
-
-.menu 
-  position: absolute
-  top: 0
-  left: -150%
-  z-index: 2
-  background-color: aqua
-  transition: all .5s ease
-
-.cancel 
-  position: absolute
-  top: -10px
-  right: 5px
-  cursor: pointer
-
 @media screen and (min-width: 500px) 
   .burger 
     display: none
@@ -667,17 +609,40 @@ footer div:last-child p
   .golub
     padding-right: 60rem
 
+  header > div:last-child
+    padding-top: 20rem
+
+  .navigation,
+  .zozula,
+  .navigation > .nav
+    gap: 20rem
+
+@media screen and (min-width: 800px) 
+  .burger 
+    display: none
+  
+  .top-line 
+    padding: 0 10px
+  
+  .menu 
+    position: static
+    display: flex
+    justify-content: space-between
+    column-gap: 10px
+    background-color: pink
+  
+  .menu li 
+    padding: 15px 10px
+  
+  .cancel 
+    display: none
+
 @media screen and (min-width: 1130px)
   html
     font-size: 1px
 
-@media screen and (min-width: 851px)
+@media screen and (min-width: 768px)
   .flex-between
     display: flex
     flex-wrap: nowrap
     justify-content: space-between
-
-  .maincards  
-    display: flex
-    flex-wrap: nowrap
-    justify-content: center
