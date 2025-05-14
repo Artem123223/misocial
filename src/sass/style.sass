@@ -6,6 +6,14 @@
 
 html
   font-size: 1px
+  +media(320)
+    font-size: 0.7px
+  +media(1130)
+    font-size: 0.8px
+  +media(1440)
+    font-size: 1px
+  +media(1920)
+    font-size: 1.5px
 
 body
   font-family: 'Maven Pro'
@@ -97,10 +105,10 @@ h1
 
   .menu 
     position: absolute
-    top: 0
+    top: -100%
     left: -100%
     width: 30vw
-    height: 100vh
+    height: 50vh
     z-index: 2
     background-color: transparent
     transition: all .5s ease
@@ -252,10 +260,18 @@ h1
   background-color: rgba(0, 0, 0, 0.3)
   backdrop-filter: blur(4px)
   z-index: 1
+
+.scrolled
+  background-color: blur(4px)
+  position: fixed
   
 .dark
   a
     color: black
+
+  .burger,
+  .golub
+    display: none
 
   .burger 
     width: 50px
@@ -277,7 +293,6 @@ h1
   .burger:hover > .b2 
     transform: translateX(10px)
 
-
   .b1 
     width: 20px
 
@@ -293,10 +308,10 @@ h1
 
   .menu 
     position: absolute
-    top: 0
+    top: -260%
     left: -100%
-    width: 20vw
-    height: 100vh
+    width: 30vw
+    height: 50vh
     z-index: 2
     background-color: transparent
     transition: all .5s ease
@@ -601,7 +616,57 @@ hr
 .samiynizsayta > div > a > svg:hover
   fill: #6e45e2
 
-@media screen and (min-width: 500px) 
+@media screen and (max-width: 499px)
+  .burger 
+    width: 50px
+    height: 100%
+    cursor: pointer
+
+  .bord 
+    display: block
+    margin: 4px
+    width: 30px
+    height: 5px
+    border-radius: 2px
+    background-color: #fff
+    transition: all 1s ease
+
+  .burger:hover > .b1 
+    transform: translateX(20px)
+
+  .burger:hover > .b2 
+    transform: translateX(10px)
+
+  .b1 
+    width: 20px
+
+  .b2 
+    width: 30px
+
+  .b3 
+    width: 40px
+    top: 10px
+
+  .ouck
+    position: relative
+
+  .menu 
+    position: absolute
+    top: -100%
+    left: -100%
+    width: 30vw
+    height: 100vh
+    z-index: 2
+    background-color: transparent
+    transition: all .5s ease
+
+  .cancel 
+    position: absolute
+    top: -10px
+    right: 5px
+    cursor: pointer
+
+@media screen and (min-width: 500px)
   .burger 
     display: none
   
@@ -626,9 +691,6 @@ hr
 @media screen and (min-width: 320px)
   header > div:last-child
     min-height: 70vh
-
-  html
-    font-size: 0.7px
 
   .golub
     padding-right: 60rem
@@ -656,15 +718,3 @@ hr
   
   .cancel 
     display: none
-
-@media screen and (min-width: 1130px)
-  html
-    font-size: 0.8px
-
-@media screen and (min-width: 1440px)
-  html
-    font-size: 1px
-
-@media screen and (min-width: 1440px)
-  html
-    font-size: 1.4px

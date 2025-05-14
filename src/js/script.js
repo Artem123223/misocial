@@ -2,11 +2,18 @@ const dark = document.querySelector(".dark-bgc"),
     burger = document.querySelector(".burger"),
     menu = document.querySelector(".menu"),
     cancel = document.querySelector(".cancel")
+    nav = document.querySelector(".navigation")
 
 burger.addEventListener("click", function() {
-  menu.style.left = "0";
+  menu.style.left = "-10%";
   dark.style.display = "block"
 })
+
+if(window.scrollY > 0) {
+    nav.classList.add("scrolled")
+} else {
+    nav.classList.remove("scrolled")
+}
 
 function cancelBurger() {
   menu.style.left = "-100%";
