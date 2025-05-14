@@ -1,4 +1,4 @@
-@import 'components/mixin'
+@import components/mixin
 
 *
   margin: 0
@@ -29,7 +29,7 @@ main > div:first-child,
   align-items: center
 
 header > div:last-child
-  min-height: 70vh
+  min-height: 100vh
   display: flex
   justify-content: flex-end
   align-items: center
@@ -91,6 +91,9 @@ h1
   .b3 
     width: 40px
     top: 10px
+
+  .ouck
+    position: relative
 
   .menu 
     position: absolute
@@ -284,6 +287,9 @@ h1
   .b3 
     width: 40px
     top: 10px
+
+  .ouck
+    position: relative
 
   .menu 
     position: absolute
@@ -538,10 +544,9 @@ hr
   opacity: 0.200
   margin: 30rem 50rem 0 50rem
 
-footer div:last-child p
+.puck
   opacity: 0.502
   font-size: 14rem
-  line-height: 19rem
   color: #6a6a77
   font-weight: 500
   font-family: "Maven Pro"
@@ -619,6 +624,9 @@ footer div:last-child p
     justify-content: space-between
 
 @media screen and (min-width: 320px)
+  header > div:last-child
+    min-height: 70vh
+
   html
     font-size: 0.7px
 
@@ -634,6 +642,9 @@ footer div:last-child p
     gap: 20rem
 
 @media screen and (min-width: 800px) 
+  header > div:last-child
+    min-height: 90vh
+
   .burger 
     display: none
   
@@ -648,4 +659,12 @@ footer div:last-child p
 
 @media screen and (min-width: 1130px)
   html
+    font-size: 0.8px
+
+@media screen and (min-width: 1440px)
+  html
     font-size: 1px
+
+@media screen and (min-width: 1440px)
+  html
+    font-size: 1.4px
