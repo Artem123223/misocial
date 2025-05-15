@@ -66,6 +66,21 @@ h1
 .zozula
   gap: 17rem
 
+.pucki
+  +media(320)
+    min-height: 70vh
+    padding-top: 20rem
+  +media(800)
+    min-height: 90vh
+
+.navigation,
+.zozula,
+.navigation > .nav
+  +media(320)
+    gap: 20rem
+  +media(800)
+    gap: 0
+
 .light
   a
     color: white
@@ -74,6 +89,8 @@ h1
     width: 50px
     height: 100%
     cursor: pointer
+    +media(500)
+      display: none
 
   .bord 
     display: block
@@ -105,19 +122,28 @@ h1
 
   .menu 
     position: absolute
-    top: -100%
+    top: -260%
     left: -100%
     width: 30vw
     height: 50vh
     z-index: 2
     background-color: transparent
     transition: all .5s ease
+    +media(500)
+      position: static
+      display: flex
+      justify-content: space-between
+      width: 100%
+      height: 100%
+      background-color: transparent
 
   .cancel 
     position: absolute
     top: -10px
     right: 5px
     cursor: pointer
+    +media(500)
+      display: none
 
   .cta-nav
     +btn(false)
@@ -277,6 +303,8 @@ h1
     width: 50px
     height: 100%
     cursor: pointer
+    +media(500)
+      display: none
 
   .bord 
     display: block
@@ -315,12 +343,21 @@ h1
     z-index: 2
     background-color: transparent
     transition: all .5s ease
+    +media(500)
+      position: static
+      display: flex
+      justify-content: space-between
+      width: 100%
+      height: 100%
+      background-color: transparent
 
   .cancel 
     position: absolute
     top: -10px
     right: 5px
     cursor: pointer
+    +media(500)
+      display: none
   
   .cta-nav
     +btn(false, true)
@@ -445,6 +482,11 @@ h2
   font-weight: 700
   +font-family('Maven Pro')
 
+.logo,
+.logo > a
+  display: flex
+  gap: 17rem
+
 .smalltextlogo 
   font-size: 16rem
   line-height: 19rem
@@ -456,6 +498,10 @@ h2
   display: flex
   justify-content: center
   flex-wrap: wrap
+  +media(500)
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
 
 .items-center 
   display: flex
@@ -615,106 +661,3 @@ hr
 
 .samiynizsayta > div > a > svg:hover
   fill: #6e45e2
-
-@media screen and (max-width: 499px)
-  .burger 
-    width: 50px
-    height: 100%
-    cursor: pointer
-
-  .bord 
-    display: block
-    margin: 4px
-    width: 30px
-    height: 5px
-    border-radius: 2px
-    background-color: #fff
-    transition: all 1s ease
-
-  .burger:hover > .b1 
-    transform: translateX(20px)
-
-  .burger:hover > .b2 
-    transform: translateX(10px)
-
-  .b1 
-    width: 20px
-
-  .b2 
-    width: 30px
-
-  .b3 
-    width: 40px
-    top: 10px
-
-  .ouck
-    position: relative
-
-  .menu 
-    position: absolute
-    top: -100%
-    left: -100%
-    width: 30vw
-    height: 100vh
-    z-index: 2
-    background-color: transparent
-    transition: all .5s ease
-
-  .cancel 
-    position: absolute
-    top: -10px
-    right: 5px
-    cursor: pointer
-
-@media screen and (min-width: 500px)
-  .burger 
-    display: none
-  
-  .top-line 
-    padding: 0 10px
-  
-  .menu 
-    position: static
-    display: flex
-    justify-content: space-between
-    gap: 60rem
-    background-color: transparent
-  
-  .cancel 
-    display: none
-
-  .flex-between
-    display: flex
-    flex-wrap: nowrap
-    justify-content: space-between
-
-@media screen and (min-width: 320px)
-  header > div:last-child
-    min-height: 70vh
-
-  .golub
-    padding-right: 60rem
-
-  header > div:last-child
-    padding-top: 20rem
-
-  .navigation,
-  .zozula,
-  .navigation > .nav
-    gap: 20rem
-
-@media screen and (min-width: 800px) 
-  header > div:last-child
-    min-height: 90vh
-
-  .burger 
-    display: none
-  
-  .top-line 
-    padding: 0 10px
-  
-  .menu li 
-    padding: 15px 10px
-  
-  .cancel 
-    display: none
