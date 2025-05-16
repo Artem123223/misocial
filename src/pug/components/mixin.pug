@@ -19,11 +19,12 @@ mixin menu(mainMenu, colorTheme="light")
                 span.bord.b1
                 span.bord.b2
                 span.bord.b3
-            ul.golub.menu(class=colorTheme) 
-                for item in mainMenu 
-                    li.smalltextlogo 
-                        a.kaka(href=item[1]) #{item[0]} 
-                p.cancel x
+            ul.golub.pupsyk.menu(class=colorTheme) 
+                .kakashka
+                    for item in mainMenu
+                        li.smalltextlogo
+                            a.kaka(href=item[1]) #{item[0]}
+                    p.cancel x
             a.gav.cta-nav(href="") get started  
 
 -

@@ -8,7 +8,7 @@ html(lang="en")
         link(href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap", rel="stylesheet")
         link(rel="icon" href="img/Symbol.svg" type="image/svg")
         link(rel="stylesheet", href="css/style.css")
-        title Misocial
+        title Misocial site where you can to visit us and tidy in out academy
     body 
         include components/mixin
         header 
@@ -17,10 +17,10 @@ html(lang="en")
                 p.header-text.one SOCIAL MARKETING & ANALYTICS
                 h1 Pricing Table
                 p.bottom-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
-                a.knopka(href="#")  
+                a.knopka(href="#", id="down")  
                     img(src="img/arrows.svg", alt="")   
-        main 
-            div
+        main.wrapper 
+            div(id="#down")
                 p.header-text.two MIsocial
                 h2 Select a Plan
                 p.bottom-text.three Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
