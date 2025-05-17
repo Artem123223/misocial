@@ -15,17 +15,17 @@ mixin menu(mainMenu, colorTheme="light")
                 img(src="img/Symbol.svg", alt="логотип сайту")
                 span.logotext MISOCIAL
         nav.ouck.nav.flex-between.items-center
-            div.burger
-                span.bord.b1
-                span.bord.b2
-                span.bord.b3
-            ul.golub.pupsyk.menu(class=colorTheme) 
-                .kakashka
+            .puckashka.flex-between.items-center
+                div.burger
+                    span.bord.b1
+                    span.bord.b2
+                    span.bord.b3
+                ul.golub.pupsyk.menu(class=colorTheme)
                     for item in mainMenu
                         li.smalltextlogo
                             a.kaka(href=item[1]) #{item[0]}
                     p.cancel x
-            a.gav.cta-nav(href="") get started  
+                a.gav.cta-nav(href="") get started 
 
 -
     let cardInfo = {
@@ -88,8 +88,7 @@ mixin card(oneCard)
             img.imgsvg(src=oneCard.img, alt=oneCard.alt)
             p.personal #{oneCard.personal}
             p.price
-                sup
-                    span.currency #{oneCard.currency}
+                span.currency #{oneCard.currency}
                 b #{oneCard.price} 
                 sub.time
                     if isMonth 

@@ -10,7 +10,7 @@ html
     font-size: 0.7px
   +media(1130)
     font-size: 0.8px
-  +media(1440)
+  +media(1920)
     font-size: 1px
 
 body
@@ -35,7 +35,7 @@ main > div:first-child,
   align-items: center
 
 header > div:last-child
-  min-height: 80vh
+  min-height: 70vh
   display: flex
   justify-content: flex-end
   align-items: center
@@ -46,7 +46,7 @@ h1
   line-height: 72px
   color: #ffffff
   font-weight: 500
-  padding-bottom: 22rem
+  margin-bottom: 22rem
 
 .bottom-text
   display: flex
@@ -68,13 +68,31 @@ h1
   +media(800)
     min-height: 80vh
 
+// .navigation
+//   display: flex
+//   position: static
+//   justify-content: space-between
+
+// .logo > a,
+// .ouck > .puckashka
+//   position: fixed
+
+// .logo,
+// .ouck
+//   position: static
+//   display: flex
+//   align-items: center
+
+.puckashka
+  gap: 15rem
+  +media(1024)
+    gap: 60rem
+
 .navigation,
 .zozula,
 .navigation > .nav
   +media(320)
     gap: 20rem
-  +media(800)
-    gap: 0
 
 .kakashka
   position: fixed
@@ -126,13 +144,10 @@ h1
     width: 40px
     top: 10px
 
-  .ouck
-    position: relative
-
   .menu 
     position: absolute
-    top: -150%
-    left: -100%
+    top: 5%
+    left: -150%
     width: 30vw
     height: 50vh
     z-index: 2
@@ -148,8 +163,11 @@ h1
 
   .cancel 
     position: absolute
-    top: -10px
-    right: 5px
+    top: 0
+    right: 5%
+    transform: translate(-50%, -50%)
+    width: 5rem
+    height: 5rem
     cursor: pointer
     +media(870)
       display: none
@@ -279,11 +297,16 @@ h1
     border-top: 2rem solid #fff
 
 .da > .cta-nav:first-child
-  +btn(true, true)
+  +btn(false, true)
+  width: 190px
 
 .da > .cta-nav:last-child,
 .description ~ a
   +btn(true)
+
+.da > .cta-nav:first-child:hover,
+.da > .cta-nav:last-child:hover
+  cursor: url("../img/cursor.png"), auto
 
 .dark-bgc
   display: none
@@ -308,36 +331,39 @@ h1
   .golub
     display: none
 
-  .bord 
-    display: block
-    margin: 4px
-    width: 30px
-    height: 5px
-    border-radius: 2px
-    background-color: #6a6a77
-    transition: all 1s ease
+  .menu 
+    position: absolute
+    top: -150%
+    left: -100%
+    width: 30vw
+    height: 50vh
+    z-index: 2
+    background-color: transparent
+    transition: all .5s ease
+    +media(870)
+      position: static
+      display: flex
+      justify-content: space-between
+      width: 100%
+      height: 100%
+      background-color: transparent
 
-  .burger:hover > .b1 
-    transform: translateX(20px)
-
-  .burger:hover > .b2 
-    transform: translateX(10px)
-
-  .b1 
-    width: 20px
-
-  .b2 
-    width: 30px
-
-  .b3 
-    width: 40px
-    top: 10px
+  .cancel 
+    position: absolute
+    top: -10px
+    right: 5px
+    cursor: pointer
+    +media(870)
+      display: none
 
   .ouck
     position: relative
   
   .cta-nav
     +btn(false, true)
+
+  .cta-nav:hover
+    box-shadow: 0 0 10.5px 5px rgba(204,204,223,0.8)
 
   .kaka:hover
     color: #6e45e2
@@ -369,8 +395,10 @@ a
 .header-text
   font-size: 14rem
   letter-spacing: 1rem
-  line-height: 32px
+  line-height: 11px
   text-transform: uppercase
+  margin-bottom: 40rem
+  color: #fff
   font-weight: 700
   position: relative
 
@@ -378,7 +406,7 @@ a
   content: ""
   position: absolute
   display: block
-  top: 25%
+  top: 50%
   left: -15%
   transform: translate(-50%, -50%)
   width: 24rem
@@ -390,7 +418,7 @@ a
   content: ""
   position: absolute
   display: block
-  top: 25%
+  top: 50%
   right: -25%
   transform: translate(-50%, -50%)
   width: 24rem
@@ -402,7 +430,7 @@ a
   content: ""
   position: absolute
   display: block
-  top: 30%
+  top: 50%
   left: -30%
   transform: translate(-50%, -50%)
   width: 24rem
@@ -414,7 +442,7 @@ a
   content: ""
   position: absolute
   display: block
-  top: 30%
+  top: 50%
   right: -60%
   transform: translate(-50%, -50%)
   width: 24rem
@@ -422,12 +450,8 @@ a
   border: none
   border-top: 1rem solid #6e45e2
 
-.one
-  padding-bottom: 40rem
-  color: #fff
-
 .two
-  padding-bottom: 25rem
+  margin-bottom: 25rem
   color: #9fa4af
 
 .three
@@ -441,15 +465,15 @@ h2
   line-height: 72px
   color: #4f4f6f
   font-weight: 500
-  padding-bottom: 38rem
+  margin-bottom: 38rem
 
 .golub 
   list-style: none
+  position: relative
   display: flex
   flex-wrap: wrap
   align-items: center
   gap: 60rem
-  padding-right: 60rem
 
 .logotext 
   font-size: 30rem
@@ -492,13 +516,21 @@ main
   flex-wrap: wrap
   gap: 50rem
   justify-content: center
+  +media(1100)
+    flex-wrap: nowrap
 
 .maincards > figure
-  padding: 59rem 72rem 66rem
-  border-radius: 30rem
+  padding: 59px 72px 66px
+  border-radius: 30px
   background-color: #ffffff
   border: 1rem solid #d7dbe8
   transition: all 0.5s ease
+  +media(320)
+    padding: 59px 35px 66px
+  +media(360)
+    padding: 59px 72px 66px
+
+.maincards > figure > figcaption
   box-sizing: border-box
 
 .maincards > figure:hover
@@ -546,6 +578,33 @@ figure:last-child img
   color: #4f4f6f
   font-weight: 500
   text-align: center
+
+.price
+  position: relative
+
+figure:first-child .currency
+  position: absolute
+  top: 11%
+  left: 32%
+  width: 8rem
+  height: 15rem
+  transform: translate(-50%, -50%)
+
+figure:nth-child(2) .currency
+  position: absolute
+  top: 11%
+  left: 28%
+  width: 8rem
+  height: 15rem
+  transform: translate(-50%, -50%)
+
+figure:last-child .currency
+  position: absolute
+  top: 11%
+  left: 28%
+  width: 8rem
+  height: 15rem
+  transform: translate(-50%, -50%)
 
 .fourth
   padding-top: 178rem
