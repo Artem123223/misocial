@@ -618,7 +618,12 @@ figure:last-child .currency
   flex-direction: column
   justify-content: center
   align-items: center
-  height: 60vh
+  +media(320)
+    height: 110vh
+  +media(425)
+    height: 90vh
+  +media(500)
+    height: 75vh
 
 .da
   display: flex
