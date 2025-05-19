@@ -91,10 +91,10 @@ mixin card(oneCard)
                 span.currency #{oneCard.currency}
                 b #{oneCard.price} 
                 sub.time
-                    if isMonth 
-                        | /month 
-                    else 
+                    if isMonth
                         | /year
+                    else 
+                        | /month 
             ul.description
                 for item in oneCard.description
                     li #{item}
